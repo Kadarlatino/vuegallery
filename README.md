@@ -1,4 +1,4 @@
-# vs-test - test task for Videoslots
+# Vue gallery
 
 ## Project setup
 ```
