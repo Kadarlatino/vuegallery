@@ -1,0 +1,32 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --dark-orange: #e27d60;
+  --light-orange: #e8a87c;
+  --green: #41b3a3;
+  --green-light: #99dfdd;
+  --grey: #7c7c7c;
+
+  // Elements Colors
+
+  --package-active: $green;
+  --primary: $green;
+  --hover: $green-light;
+  --text-color: $black;
+  --text-color-2: $grey;
+  --link-color: $green;
+  --border-color: $grey;
+
+  // font
+
+  --font: 'Cera Pro', Helvetica, Arial, sans-serif;
+}
+
+// Breakpoints
+
+$breakpoints: (
+  'sm': 49rem, // 784px
+  'md': 65rem,
+  'lg': 76rem, // 1216px
+  'xlg': 96rem
+) !default;

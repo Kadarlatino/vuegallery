@@ -1,0 +1,62 @@
+@import './vendors/reset.css';
+@import './variables.scss';
+@import './mixins.scss';
+
+body {
+  font-family: var(--font);
+}
+
+input[type="text"],
+select {
+  background: var(--white);
+  border: 1px solid var(--grey);
+  margin: 10px 0 0;
+
+  &:focus {
+    border-color: var(--light-orange);
+    outline: none;
+  }
+
+  @include respond-to('sm') {
+    margin: 0 0 0 10px;
+  }
+}
+
+select {
+  padding: 8px 10px;
+}
+
+input[type="text"] {
+  padding: 9px 10px;
+}
+
+.container {
+  padding: 0 10px;
+  margin: 0 auto;
+
+  @include respond-to('sm') {
+    padding: 0 20px;
+    max-width: 768px;
+  }
+
+  @include respond-to('lg') {
+    max-width: 1024px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
+  grid-gap: 5px;
+  align-items: center;
+  justify-content: center;
+
+  @include respond-to('sm') {
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  @include respond-to('lg') {
+    grid-gap: 25px;
+  }
+}
